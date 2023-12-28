@@ -1,4 +1,4 @@
-prefix ?= /usr/local
+prefix ?= /usr
 .DEFAULT_GOAL := build
 
 prebuild:
@@ -9,7 +9,7 @@ build: prebuild
 	export GOFLAGS='-buildmode=pie'
 	export CGO_CPPFLAGS="-D_FORTIFY_SOURCE=3"
 	export CGO_LDFLAGS="-Wl,-z,relro,-z,now"
-	go build
+	go build -buildvcs=false
 
 install: build
 	install -Dm 755 drasl "$(prefix)/bin/drasl"
