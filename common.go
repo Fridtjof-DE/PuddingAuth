@@ -27,23 +27,27 @@ import (
 )
 
 type ConstantsType struct {
-	ConfigDirectory     string
-	MaxPlayerNameLength int
-	MaxUsernameLength   int
-	Version             string
-	License             string
-	LicenseURL          string
-	RepositoryURL       string
+	ConfigDirectory          string
+	MaxPlayerNameLength      int
+	MaxUsernameLength        int
+	Version                  string
+	License                  string
+	LicenseURL               string
+	RepositoryURL            string
+	PuddingAuthVersion       string
+	PuddingAuthRepositoryURL string
 }
 
 var Constants = &ConstantsType{
-	MaxUsernameLength:   16,
-	MaxPlayerNameLength: 16,
-	ConfigDirectory:     DEFAULT_CONFIG_DIRECTORY,
-	Version:             VERSION,
-	License:             LICENSE,
-	LicenseURL:          LICENSE_URL,
-	RepositoryURL:       REPOSITORY_URL,
+	MaxUsernameLength:        16,
+	MaxPlayerNameLength:      16,
+	ConfigDirectory:          DEFAULT_CONFIG_DIRECTORY,
+	Version:                  VERSION,
+	License:                  LICENSE,
+	LicenseURL:               LICENSE_URL,
+	RepositoryURL:            REPOSITORY_URL,
+	PuddingAuthVersion:       PUDDING_AUTH_VERSION,
+	PuddingAuthRepositoryURL: PUDDING_AUTH_REPOSITORY_URL,
 }
 
 type CachedResponse struct {

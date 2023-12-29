@@ -114,7 +114,7 @@ func DefaultConfig() Config {
 		Domain:                   "",
 		EnableBackgroundEffect:   true,
 		ForwardSkins:             true,
-		InstanceName:             "Drasl",
+		InstanceName:             "PuddingAuth-Drasl",
 		ListenAddress:            "0.0.0.0:25585",
 		LogRequests:              true,
 		MinPasswordLength:        8,
