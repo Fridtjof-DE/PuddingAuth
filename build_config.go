@@ -14,5 +14,5 @@ const DEFAULT_STATE_DIRECTORY = "/var/lib/drasl"
 const DEFAULT_CONFIG_DIRECTORY = "/etc/drasl"
 
 // PuddingAuth
-const PUDDING_AUTH_VERSION = "1.0.0"
+const PUDDING_AUTH_VERSION = "1.1.0"
 const PUDDING_AUTH_REPOSITORY_URL = "https://github.com/Fridtjof-DE/PuddingAuth/"
